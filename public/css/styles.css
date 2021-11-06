@@ -10,8 +10,83 @@
             background-color: #EAC926;
         }
         
+        .logo {
+            width: 50%;
+            height: auto;
+            justify-content: left;
+            margin: 16px;
+            padding: 16px;
+        }
+        
+        .barra {
+            width: auto;
+            height: auto;
+            text-align: left;
+            margin-left: 16px;
+        }
+        
+        .boton {
+            width: auto;
+            height: auto;
+            justify-content: right;
+            text-align: right;
+        }
+        
+        .compra {
+            text-align: center;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        
+        .menu-inicial {
+            text-align: left;
+            margin-left: 0%;
+            font-weight: normal;
+        }
+        
+        .burger-menu {
+            font-size: 16px;
+            text-align: center;
+            color: white;
+        }
+        
+        .burger-menu i {
+            background-color: #1259c3;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 16px;
+        }
+        
+        .banner {
+            width: 100%;
+        }
+        
+        article {
+            background-color: white;
+            margin: 8px;
+            padding-bottom: 2px;
+        }
+        
+        article img {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        section {
+            text-align: center;
+        }
+        
+        .camion {
+            font-size: 32px;
+            text-align: center;
+            padding: 16px;
+            color: #39b54a;
+        }
+        
         .titulares {
             font-size: 24px;
+            text-align: center;
         }
         
         .precios {
@@ -30,31 +105,18 @@
             font-size: 12px;
         }
         
-        .banner {
-            width: 100%;
-        }
-        
-        .visita img {
-            width: 100%;
-        }
-        
-        .ofertas img {
-            width: 100%;
-        }
-        
-        .compra {
-            text-align: center;
-        }
-        
         footer {
             text-align: center;
+            background-color: white;
         }
         
-        .copy {
+        footer i {
+            color: blue;
+            margin-bottom: 16px;
+            margin-top: 16px;
+            font-size: 50px;
+        }
+        
+        .copyright {
             text-align: left;
-        }
-        
-        .burger-menu {
-            text-align: center;
-            background-color: #03264C;
         }
