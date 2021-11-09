@@ -57,6 +57,11 @@
             padding: 16px;
         }
         
+        main {
+            text-align: center;
+            line-height: 10px;
+        }
+        
         .banner {
             width: 100%;
         }
@@ -84,11 +89,11 @@
             color: #39b54a;
         }
         
-        .desc {
+        .desc-ofertas {
             color: #39b54a
         }
         
-        .desc .titulares {
+        .titulares {
             font-size: 24px;
             text-align: center;
         }
