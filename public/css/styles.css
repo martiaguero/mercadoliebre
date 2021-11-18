@@ -71,7 +71,7 @@
  article {
      background-color: white;
      margin: 8px;
-     padding: 15px;
+     padding: 5px 0;
  }
  
  .caja-articulo {
@@ -86,19 +86,20 @@
      margin-right: auto;
  }
  
- article i {
-     display: block;
-     width: 30px;
-     height: 30px;
-     color: #39b54a;
-     border: 1px solid #39b54a;
-     background-color: #FFF;
-     border-radius: 50%;
+ .truck-container {
      position: relative;
-     top: -15px;
-     text-align: center;
-     margin: auto;
-     font-size: 20px;
+     border: 1px solid #39b54a;
+     border-radius: 50%;
+     width: 35px;
+     height: 35px;
+     margin: 0 90%;
+ }
+ 
+ .truck-container i {
+     position: absolute;
+     top: 9px;
+     right: 6px;
+     color: #39b54a;
  }
  
  section {
