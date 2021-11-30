@@ -45,6 +45,7 @@ header {
     margin-left: -245px;
     z-index: 10;
     cursor: pointer;
+    /* border: green solid; */
 }
 
 .barra-lupa {
@@ -57,7 +58,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    /* border: green solid 1px; */
+    /* border: rgb(195, 0, 255) solid; */
 }
 
 .barra-lupa::after {
@@ -70,6 +71,7 @@ header {
     border-radius: 0 5px 5px 0;
     padding-top: 1px;
     border-left: 1px solid #8080805c;
+    /* border: rgb(219, 80, 25) solid; */
 }
 
 .barra-lupa input {
@@ -81,6 +83,7 @@ header {
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    /* border: salmon solid; */
 }
 
 .compra {
@@ -382,6 +385,9 @@ footer i {
     }
     .precio-oferta {
         margin-top: 2px;
+    }
+    .truck-container i {
+        top: -20px;
     }
     /* ------------------------------------------------------------- */
     .burger-menu {
