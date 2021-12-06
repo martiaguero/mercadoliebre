@@ -5,7 +5,7 @@ const controllers = require('../controllers/mainControllers')
 
 router.get('/', controllers.home)
     // router.get('/register', controllers.register)
-router.get('/login', controllers.login)
+    // router.get('/login', controllers.login)
 
 
 module.exports = router;
