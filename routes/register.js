@@ -3,9 +3,9 @@ const path = require('path')
 const router = express.Router()
 const controllers = require('../controllers/mainControllers')
 
-router.get('/', controllers.home)
-    // router.get('/register', controllers.register)
-router.get('/login', controllers.login)
+
+router.get('/register', controllers.register)
+
 
 
 module.exports = router;
