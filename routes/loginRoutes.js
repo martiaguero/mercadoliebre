@@ -3,8 +3,7 @@ const path = require('path')
 const router = express.Router()
 const controllers = require('../controllers/mainControllers')
 
-router.get('/register', controllers.register)
-
+router.get('/login', controllers.login)
 
 
 module.exports = router;
