@@ -4,8 +4,7 @@ const router = express.Router()
 const controllers = require('../controllers/mainControllers')
 
 router.get('/', controllers.home)
-    // router.get('/register', controllers.register)
-    // router.get('/login', controllers.login)
-
+router.post('/', (req, res) => {
+     res.sendFile(path.join(__dirname + '/../views/home.html'))})
 
 module.exports = router;

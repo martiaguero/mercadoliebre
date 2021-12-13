@@ -22,47 +22,20 @@
 </head>
 
 <body>
-    <!-- <header>
-        <div class="header-top">
-            <img class="logo" src=.\images\logo-mercado-liebre.svg alt="imagen logo">
-
-            <div class="barra-lupa">
-                <input class="barra" type="search" name="busqueda" placeholder="Buscar productos, marcas ..">
-                <button class="lupa" type="submit"><i class="fas fa-search"></i></button>
-
-            </div>
-            <div>
-                <h3 class="compra">
-                    <i class="fas fa-hand-holding-usd">               
-            </i> Compra en cuotas y sin tarjeta de crédito
-                </h3>
-            </div>
-        </div>
-
-        <div class="botom-bar">
-            <nav class="menu1">
-                <ul type="none">
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-            </nav>
-            <nav class="menu2">
-                <ul type="none">
-                    <li><a href="#">Creá tu cuenta </a><i class="far fa-id-card"></i></li>
-                    <li><a href="#">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header> -->
     <%- include('./partials/header') %>
-        <h1>login</h1>
+    <form action="" method="get">
+            <label>Nombre de usuari@</label>
+            <input type="text" name="usuario">
+        </div>
+        <div>
+            <label>Contraseña</label>
+            <input type="password" name="contraseña">
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btnSend">Enviar</button>
+        </div>
+    </form>
 </body>
+<%- include('./partials/footer') %>
 
 </html>
