@@ -1,0 +1,40 @@
+.formulario {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: auto;
+}
+
+.formulario input {
+    text-align: center;
+    border: none;
+    max-width: fit-content;
+    /* padding: 10%; */
+    max-height: fit-content;
+    /* margin: 10% 0 10% 0; */
+}
+
+.banner-register{
+    max-width: 50%;
+    border: springgreen 1px solid;
+
+}
+
+.div-form{
+    margin-bottom: 15px;
+}
+
+.div-form label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.opcionPerfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

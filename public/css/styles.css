@@ -21,6 +21,11 @@ header {
     justify-content: space-between;
 }
 
+.header-top a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .top-bar {
     margin: 10px;
 }

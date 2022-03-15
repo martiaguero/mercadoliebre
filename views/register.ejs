@@ -1,70 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <!--charset -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <!--medida viewport -->
-    <title>Mercado Liebre</title>
-    <link href="/css/normalize.css" rel="stylesheet">
-    <!--vinculacion normalize -->
-    <link href=".\css\styles.css" rel="stylesheet">
-    <!-- vinculacion css -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- añadir fuente de google -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/6d5db1da77.js" crossorigin="anonymous"></script>
-</head>
+<%- include('./partials/head') %>
 
 <body>
     <%- include('./partials/header') %>
-        <form action="/" method="post">
-            <div>
-                <label>Nombre y apellido:</label>
-                <input type="text" name="nombre" minlength="5">
-                <!-- <span class="feedback">rellenar este campo</span> -->
+
+    <img  class="banner-register" src=".\images\img-home-banner.jpg ">
+        <form class="formulario" action="/" method="post">
+            <div class="div-form">
+                <input placeholder="Nombre y apellido" type="text" name="nombre" minlength="5">
+                <span class="feedback"></span>
             </div>
-            <div>
-                <label>Nombre de usuari@</label>
-                <input type="text" name="usuario">
+            <div class="div-form">
+                <input placeholder="Nombre de usuari@" type="text" name="usuario">
+                <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="div-form">
                 <label>Fecha de nacimiento</label>
                 <input type="date" name="fecha">
             </div>
-            <div>
-                <label>Domicilio</label>
-                <input type="text" name="domicilio">
+            <div class="div-form">
+                <input placeholder="Domicilio" type="text" name="domicilio">
             </div>
-            <div>
-                <label>Perfil del usuario</label>
-                <select>
-            <option> Vender </option>
-            <option> Comprar </option>
-        </select>
+            <div class="div-form">
+                <label class='opcionPerfil'>Perfil del usuario</label>
+                <input  type="checkbox" name="perfil">
+                    <option> Vender </option>
+                    <option> Comprar </option>
             </div>
-            <div>
+            <div class="div-form">
                 <label>Categorías de interés</label>
-                <input type="checkbox" name="categoria">
+                <input  class='interes' type="checkbox" name="categoria">
                 <option> Hogar </option>
                 <option> Electro </option>
+                <option> Moda </option>
+                <option> Jugueteria </option>
+                <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="div-form">
                 <label>Foto de perfil</label>
                 <input type="file" name="foto">
             </div>
-            <div>
-                <label>Contraseña</label>
-                <input type="password" name="contraseña">
+            <div class="div-form">
+                <input placeholder="Contraseña" type="password" name="contraseña">
+                <span class="feedback" id="feedback"></span>
             </div>
-            <div>
-                <label>Confirmar contraseña</label>
-                <input type="password" name="conf-contraseña">
+            <div class="div-form">
+                <input placeholder="Confirmar contraseña" type="password" name="conf-contraseña">
+                <span class="feedback" id="feedback"></span>
             </div>
             <div class="buttons">
                 <button type="submit" class="btnSend">Enviar</button>
