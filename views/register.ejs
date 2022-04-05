@@ -3,55 +3,43 @@
 <body>
     <%- include('./partials/header') %>
 
-    <img  class="banner-register" src=".\images\img-home-banner.jpg ">
-        <form class="formulario" action="/" method="post">
-            <div class="div-form">
-                <input placeholder="Nombre y apellido" type="text" name="nombre" minlength="5">
-                <span class="feedback"></span>
-            </div>
-            <div class="div-form">
-                <input placeholder="Nombre de usuari@" type="text" name="usuario">
-                <span class="feedback" id="feedback"></span>
-            </div>
-            <div class="div-form">
-                <label>Fecha de nacimiento</label>
-                <input type="date" name="fecha">
-            </div>
-            <div class="div-form">
-                <input placeholder="Domicilio" type="text" name="domicilio">
-            </div>
-            <div class="div-form">
-                <label class='opcionPerfil'>Perfil del usuario</label>
-                <input  type="checkbox" name="perfil">
-                    <option> Vender </option>
-                    <option> Comprar </option>
-            </div>
-            <div class="div-form">
-                <label>Categorías de interés</label>
-                <input  class='interes' type="checkbox" name="categoria">
-                <option> Hogar </option>
-                <option> Electro </option>
-                <option> Moda </option>
-                <option> Jugueteria </option>
-                <span class="feedback" id="feedback"></span>
-            </div>
-            <div class="div-form">
-                <label>Foto de perfil</label>
-                <input type="file" name="foto">
-            </div>
-            <div class="div-form">
-                <input placeholder="Contraseña" type="password" name="contraseña">
-                <span class="feedback" id="feedback"></span>
-            </div>
-            <div class="div-form">
-                <input placeholder="Confirmar contraseña" type="password" name="conf-contraseña">
-                <span class="feedback" id="feedback"></span>
-            </div>
-            <div class="buttons">
-                <button type="submit" class="btnSend">Enviar</button>
-                <button type="reset" class="btnErase">Borrar</button>
-            </div>
-        </form>
+    <img  class="banner" src=".\images\img-home-banner.jpg ">
+    <main class="main-register">
+        <h2>Registrate</h2>
+        <h3 class="titulo-register">Completa los datos requeridos para el registro</h3>
+        <form action="/register.html">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" class="input" required="">
+            <input type="text" name="user" id="user" placeholder="Nombre de Usuario" class="input" required="">
+            <input type="email" name="email" id="email" placeholder="E-mail" class="input" required="">
+            <h3 class="titulo-register">Fecha de nacimiento</h3>
+            <input type="date" name="fecha" value="2021-15-11" min="2000-01-01" max="2021-11-15" class="input">
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="input" required="">
+            <h3 class="titulo-register">Perfil del usuario</h3>
+            <input type="radio" name="tipoperfil" value="vendedor" id="comprador" checked=""> 
+                <label for="comprador">Comprador</label>
+            <input type="radio" name="tipoperfil" value="comprador" id="vendedor"> 
+                <label for="vendedor">Vendedor</label>
+            <div class="datosrequeridos">
+        
+                <h4>Tus intereses son:</h4>
+                    <input type="checkbox" name="intereses" value="electro" id="electro"> 
+                        <label for="electro">Electro</label>
+                    <input type="checkbox" name="intereses" value="moda" id="moda"> 
+                        <label for="moda">Moda</label>
+                    <input type="checkbox" name="intereses" value="hogar" id="hogar"> 
+                        <label for="hogar">Hogar</label>
+                    <input type="checkbox" name="intereses" value="jugueteria" id="jugueteria"> 
+                        <label for="jugueteria">Jugueteria</label>
+                    <input type="checkbox" name="intereses" value="Vida_Sana" id="Vida_Sana"> 
+                        <label for="Vida_Sana">Vida Sana</label>
+                </div>
+                <div class="botones">                
+                    <input type="reset" name="resetear" id="reset" class="boton-reset-register">
+                    <input type="submit" name="enviar" id="enviar" class="boton-enviar-register">
+                </div>
+        </form>     
+    </main>
+
 </body>
 <%- include('./partials/footer') %>
 

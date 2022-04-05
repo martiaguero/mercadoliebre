@@ -11,7 +11,8 @@ body {
 
 header {
     background-color: #EAC926;
-    margin: auto;
+    /* margin: auto; */
+    margin-bottom: 0px;
 }
 
 .header-top {
@@ -142,11 +143,12 @@ main {
     /* text-align: center; */
     line-height: 10px;
     width: 90%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .banner {
     width: 100%;
+   
 }
 
 section article {
@@ -270,6 +272,9 @@ p {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: white;
 }
